@@ -2,10 +2,12 @@ import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import Homepage from './Pages/Homepage';
 import Register from './Pages/Register';
-import Login from './Pages/Login';
 import Apply from './Pages/Apply';
 import Modal from './Pages/Modal';
 import StudentPage from './Pages/StudentPage';
+import Login from './Pages/Login/Login';
+import Contact from './Pages/Contact';
+import About from './Pages/About';
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <Route path='/apply' element={<Apply />} />
         <Route path='/modal' element={<Modal />} />
         <Route path='/studentpage' element={<StudentPage />} />
+        <Route path='/contact' element={<Contact />} />
+        <Route path='/about' element={<About />} />
       </Routes>
     </div>
   );

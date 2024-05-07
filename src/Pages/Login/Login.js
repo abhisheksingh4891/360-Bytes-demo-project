@@ -1,7 +1,7 @@
 import {React, useState} from 'react'
 import { Link, useNavigate } from 'react-router-dom';
-import Logo from '../Components/Logo';
-import bg1 from '../Assets/bg2.jpg'
+import Logo from '../../Components/Logo';
+import bg1 from '../../Assets/bg2.jpg';
 
 const Login = () => {
 
