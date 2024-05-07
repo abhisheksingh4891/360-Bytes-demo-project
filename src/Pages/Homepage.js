@@ -13,7 +13,7 @@ const Homepage = () => {
     // navigate("/modal");
   }
   return (
-    <div className="container-fluid p-3" style={{ backgroundImage: `url(${c1})` , backgroundSize: 'cover', backgroundPosition: 'center', filter:'brightness(80%)', fontFamily:'Raleway'}}>
+    <div className="container-fluid p-0" style={{ backgroundImage: `url(${c1})` , backgroundSize: 'cover', backgroundPosition: 'center', filter:'brightness(80%)', fontFamily:'Raleway'}}>
       <Logo />
       <Navbar />
       <div className="row mx-4 mt-5">
@@ -51,7 +51,7 @@ const Homepage = () => {
           </div>
         </div>
         <div className="col-md-4">
-          <div className="card" style={{backgroundColor: 'rgba(255, 255, 255, 0.7)'}}>
+          <div className="card mb-5" style={{backgroundColor: 'rgba(255, 255, 255, 0.7)'}}>
             <div className="card-body">
               <h5 className="card-title mb-4">Student Login</h5>
               <form onSubmit={Submit}>
