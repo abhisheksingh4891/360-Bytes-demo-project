@@ -39,7 +39,7 @@ const StudentPage = () => {
       </nav>
       </div>
       <div className="row mx-4 mt-5">
-        <div className="col-md-4">
+        <div className="col-md-4 pb-3">
           <div className="card" style={{backgroundColor: 'rgba(255, 255, 255, 0.7)'}}>
           <div className="card-body">
               <h5 className="card-title mb-4"><b>My Profile</b></h5>
@@ -70,7 +70,7 @@ const StudentPage = () => {
             </div>
           </div>
         </div>
-        <div className="col-md-4">
+        <div className="col-md-4 pb-3">
           <div className="card" style={{backgroundColor: 'rgba(255, 255, 255, 0.7)'}}>
             <div className="card-body">
               <h5 className="card-title"><b>Schemes Provided</b></h5>
