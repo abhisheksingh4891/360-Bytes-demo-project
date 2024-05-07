@@ -1,12 +1,12 @@
 import React from 'react';
-import Navbar from '../Components/Navbar';
-import { Link, useNavigate } from 'react-router-dom';
+// import Navbar from '../Components/Navbar';
+import { Link } from 'react-router-dom';
 import Logo from '../Components/Logo';
 import c1 from "../Assets/c4.jpg";
 
 const StudentPage = () => {
 
-  const navigate = useNavigate();
+//   const navigate = useNavigate();
 
   const Submit = (e)=> {
     e.preventDefault();

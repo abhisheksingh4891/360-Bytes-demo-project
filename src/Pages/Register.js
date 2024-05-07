@@ -5,7 +5,7 @@ import bg1 from '../Assets/bg3.jpg'
 
 const Register = () => {
 
-  const [name, setName] = useState('');
+  const [fname, setName] = useState('');
   const [gender, setGender] = useState('');
   const [phone, setPhone] = useState('');
   const [email, setEmail] = useState('');
@@ -20,6 +20,7 @@ const Register = () => {
 
   const Submit = (e)=> {
     e.preventDefault();
+    // console.log();
     navigate("/modal");
   }
 
@@ -43,7 +44,7 @@ const Register = () => {
                   
                   <div className="form-outline mb-4">
                     <label className="form-label text-black fw-bold" htmlFor="form2Example17">Name</label>
-                    <input required type="text" id="form2Example17" className="form-control" onChange={(e)=>{setName(e.target.value)}} name="first"/>
+                    <input required type="text" id="form2Example17" className="form-control" onChange={(e)=>{setName(e.target.value)}} name="fname" value={fname}/>
                   </div>
 
                   <div className="form-outline mb-4">
@@ -57,38 +58,38 @@ const Register = () => {
 
                   <div className="form-outline mb-4">
                     <label className="form-label text-black fw-bold" htmlFor="form2Example19">Mobile Number</label>
-                    <input required type="number" id="form2Example19" className="form-control form-control"  onChange={(e)=>{setPhone(e.target.value)}} name="phone"/>
+                    <input required type="number" id="form2Example19" className="form-control form-control"  onChange={(e)=>{setPhone(e.target.value)}} name="phone" value={phone}/>
                   </div>
 
                   <div className="form-outline mb-4">
                     <label className="form-label text-black fw-bold" htmlFor="form2Example20">Email address</label>
-                    <input required type="email" id="form2Example20" className="form-control" onChange={(e)=>{setEmail(e.target.value)}} name="email" />
+                    <input required type="email" id="form2Example20" className="form-control" onChange={(e)=>{setEmail(e.target.value)}} name="email" value={email}/>
                   </div>
 
                   <div className="form-outline mb-4">
                     <label className="form-label text-black fw-bold" htmlFor="form2Example23">State Domicile</label>
-                    <input required type="text" id="form2Example23" className="form-control" onChange={(e)=>{setState(e.target.value)}} name="email" />
+                    <input required type="text" id="form2Example23" className="form-control" onChange={(e)=>{setState(e.target.value)}} name="email" value={state}/>
                   </div>
 
                   <div className="form-outline mb-4">
                     <label className="form-label text-black fw-bold" htmlFor="form2Example24">Institute Code</label>
-                    <input required type="number" id="form2Example24" className="form-control" onChange={(e)=>{setIcode(e.target.value)}} name="email" />
+                    <input required type="number" id="form2Example24" className="form-control" onChange={(e)=>{setIcode(e.target.value)}} name="email" value={icode}/>
                   </div>
 
                   <div className="form-outline mb-4">
                     <label className="form-label text-black fw-bold" htmlFor="form2Example25">Aadhar Number</label>
-                    <input required type="number" id="form2Example25" className="form-control" onChange={(e)=>{setAadhar(e.target.value)}} name="email" />
+                    <input required type="number" id="form2Example25" className="form-control" onChange={(e)=>{setAadhar(e.target.value)}} name="email" value={aadhar}/>
                   </div>
 
 
                   <div className="form-outline mb-4">
                     <label className="form-label text-black fw-bold" htmlFor="form2Example21">Password</label>
-                    <input required type="password" id="form2Example21" className="form-control" onChange={(e)=>{setPassword(e.target.value)}} name="password" />
+                    <input required type="password" id="form2Example21" className="form-control" onChange={(e)=>{setPassword(e.target.value)}} name="password" value={password}/>
                   </div>
 
                   <div className="form-outline mb-4">
                     <label className="form-label text-black fw-bold" htmlFor="form2Example22">Confirm Password</label>
-                    <input required type="password" id="form2Example22" className="form-control" onChange={(e)=>{setConfirmPassword(e.target.value)}} name="confirmPassword" />
+                    <input required type="password" id="form2Example22" className="form-control" onChange={(e)=>{setConfirmPassword(e.target.value)}} name="confirmPassword" value={confirmPassword}/>
                   </div>
 
                   <div className="d-flex gap-2 mb-2">

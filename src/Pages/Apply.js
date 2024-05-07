@@ -1,5 +1,5 @@
 import {React, useState} from 'react'
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Logo from '../Components/Logo';
 import bg1 from '../Assets/bg5.jpg'
 
@@ -9,8 +9,6 @@ const Apply = () => {
   const [gender, setGender] = useState('');
   const [phone, setPhone] = useState('');
   const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [confirmPassword, setConfirmPassword] = useState('');
   const [state, setState] = useState('');
   const [icode, setIcode] = useState('');
   const [aadhar, setAadhar] = useState('');
@@ -19,7 +17,7 @@ const Apply = () => {
   const [study, setStudy] = useState('');
 
 
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   const Submit = (e)=> {
     e.preventDefault();
@@ -51,7 +49,7 @@ const Apply = () => {
                         <div className="col">
                           <div className="form-outline mb-4">
                             <label className="form-label text-black fw-bold" htmlFor="form2Example17">Name</label>
-                            <input required type="text" id="form2Example17" className="form-control" onChange={(e) => setName(e.target.value)} name="first" />
+                            <input required type="text" id="form2Example17" className="form-control" onChange={(e) => setName(e.target.value)} name="first" value={name}/>
                           </div>
                         </div>
 
@@ -71,14 +69,14 @@ const Apply = () => {
                         <div className='col'>
                           <div className="form-outline mb-4">
                             <label className="form-label text-black fw-bold" htmlFor="form2Example19">Mobile Number</label>
-                            <input required type="number" id="form2Example19" className="form-control form-control"  onChange={(e)=>{setPhone(e.target.value)}} name="phone"/>
+                            <input required type="number" id="form2Example19" className="form-control form-control"  onChange={(e)=>{setPhone(e.target.value)}} name="phone" value={phone}/>
                           </div>
                         </div>
 
                         <div className='col'>
                           <div className="form-outline mb-4">
                             <label className="form-label text-black fw-bold" htmlFor="form2Example25">Aadhar Number</label>
-                            <input required type="number" id="form2Example25" className="form-control" onChange={(e)=>{setAadhar(e.target.value)}} name="email" />
+                            <input required type="number" id="form2Example25" className="form-control" onChange={(e)=>{setAadhar(e.target.value)}} name="aadhar" value={aadhar} />
                           </div>
                         </div>
                       </div>
@@ -87,14 +85,14 @@ const Apply = () => {
                         <div className='col'>
                           <div className="form-outline mb-4">
                             <label className="form-label text-black fw-bold" htmlFor="form2Example20">Email address</label>
-                            <input required type="email" id="form2Example20" className="form-control" onChange={(e)=>{setEmail(e.target.value)}} name="email" />
+                            <input required type="email" id="form2Example20" className="form-control" onChange={(e)=>{setEmail(e.target.value)}} name="email" value={email}/>
                           </div>
                         </div>
 
                         <div className='col'>                          
                           <div className="form-outline mb-4">
                             <label className="form-label text-black fw-bold" htmlFor="form2Example23">State Domicile</label>
-                            <input required type="text" id="form2Example23" className="form-control" onChange={(e)=>{setState(e.target.value)}} name="email" />
+                            <input required type="text" id="form2Example23" className="form-control" onChange={(e)=>{setState(e.target.value)}} name="state" value={state}/>
                           </div>
                         </div>
                       </div>
@@ -108,20 +106,20 @@ const Apply = () => {
                         <div className='col'>
                           <div className="form-outline mb-4">
                             <label className="form-label text-black fw-bold" htmlFor="form2Example30">Institute Name</label>
-                            <input required type="text" id="form2Example30" className="form-control" onChange={(e)=>{setIname(e.target.value)}} name="iname" />
+                            <input required type="text" id="form2Example30" className="form-control" onChange={(e)=>{setIname(e.target.value)}} name="iname" value={iname}/>
                           </div>
                         </div>
 
                         <div className='col'>    
                           <div className="form-outline mb-4">
                             <label className="form-label text-black fw-bold" htmlFor="form2Example24">Institute Code</label>
-                            <input required type="number" id="form2Example24" className="form-control" onChange={(e)=>{setIcode(e.target.value)}} name="code" />
+                            <input required type="number" id="form2Example24" className="form-control" onChange={(e)=>{setIcode(e.target.value)}} name="code" value={icode}/>
                           </div>
                         </div>
                       </div>
                       <div className="form-outline mb-4">
                         <label className="form-label text-black fw-bold" htmlFor="form2Example32">Graduation Year</label>
-                        <input required type="number" id="form2Example32" className="form-control" onChange={(e)=>{setYear(e.target.value)}} name="year" />
+                        <input required type="number" id="form2Example32" className="form-control" onChange={(e)=>{setYear(e.target.value)}} name="year" value={year}/>
                       </div>
 
                       <div className="form-outline mb-4">

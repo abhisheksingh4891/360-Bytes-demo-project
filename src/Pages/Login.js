@@ -13,6 +13,7 @@ const Login = () => {
 
   const Submit = (e)=> {
     e.preventDefault();
+    console.log(password, aadhar);
     navigate('/');
   }
   
