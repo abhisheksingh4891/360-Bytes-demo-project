@@ -1,7 +1,6 @@
 import React from 'react'
 import Logo from '../Components/Logo'
 import c1 from '../Assets/bg5.jpg'
-// import { Link } from 'react-router-dom'
 import Navbar from '../Components/Navbar'
 
 const About = () => {
@@ -13,8 +12,8 @@ const About = () => {
         <div className="row d-flex justify-content-center align-items-center mx-1 pt-4 mt-3">
             <div className="col col-xl-5">
                 <div className="" style={{ borderRadius: "1rem", backgroundColor: 'rgba(255, 255, 255, 0.7)'}}> 
-                <div className="row g-0">
-                    <div className="card-body p-4 text-black">
+                    <div className="row g-0">
+                        <div className="card-body p-4 text-black">
                             <h1 className='text-center pb-2'><u>About Us</u></h1>  
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -35,12 +34,7 @@ const About = () => {
                                 with the best possible service and experience.
                                 </p>
                             </div>
-                            <p>
-                                {/* Our Team */}
-                                
-                            </p>
-                            {/* <Link to='/'><button className='btn btn-info'>Continue</button></Link>  */}
-                    </div>
+                        </div>
                     </div>
                 </div>
             </div>

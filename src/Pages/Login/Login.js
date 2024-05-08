@@ -13,7 +13,6 @@ const Login = () => {
 
   const Submit = (e)=> {
     e.preventDefault();
-    console.log(password, aadhar);
     navigate('/');
   }
   
@@ -36,13 +35,13 @@ const Login = () => {
 
                   <div className="form-outline mb-4">
                     <label className="form-label text-black fw-bold" htmlFor="form2Example25">Username</label>
-                    <input required type="text" id="form2Example25" className="form-control" onChange={(e)=>{setAadhar(e.target.value)}} name="email" />
+                    <input required type="text" id="form2Example25" className="form-control" onChange={(e)=>{setAadhar(e.target.value)}} name="email" value={aadhar}/>
                   </div>
 
 
                   <div className="form-outline mb-4">
                     <label className="form-label text-black fw-bold" htmlFor="form2Example21">Password</label>
-                    <input required type="password" id="form2Example21" className="form-control" onChange={(e)=>{setPassword(e.target.value)}} name="password" />
+                    <input required type="password" id="form2Example21" className="form-control" onChange={(e)=>{setPassword(e.target.value)}} name="password" value={password}/>
                   </div>
 
                   <Link to='/studentpage'>

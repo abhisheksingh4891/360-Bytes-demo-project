@@ -9,11 +9,8 @@ import PortalDesc from '../Components/PortalDesc';
 
 const Homepage = () => {
 
-  // const navigate = useNavigate();
-
   const Submit = (e)=> {
     e.preventDefault();
-    // navigate("/modal");
   }
   return (
     <div className="container-fluid pt-3" style={{ backgroundImage: `url(${c1})` , backgroundSize: 'cover', backgroundPosition: 'center', filter:'brightness(80%)', fontFamily:'Raleway'}}>
@@ -46,13 +43,6 @@ const Homepage = () => {
               </form>
             </div>
           </div>
-          {/* <div className="card mt-3 mb-3" style={{backgroundColor: 'rgba(255, 255, 255, 0.7)'}}>
-            <div className="card-body">
-              <h5 className="card-title">Scheme Description</h5>
-              <p className="card-text">Click on button below to apply.</p>
-              <Link to="/apply" className="btn btn-danger">Apply Now</Link>
-            </div>
-          </div> */}
         </div>
       </div>
     </div>

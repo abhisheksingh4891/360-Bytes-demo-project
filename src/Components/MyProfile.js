@@ -5,7 +5,6 @@ const MyProfile = () => {
 
     const Submit = (e)=> {
         e.preventDefault();
-        // navigate("/modal");
       }
       
   return (

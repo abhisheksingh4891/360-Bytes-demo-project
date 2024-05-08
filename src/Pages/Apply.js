@@ -34,15 +34,9 @@ const Apply = () => {
       <div className="col col-xl-6">
         <div className="" style={{ borderRadius: "1rem", backgroundColor: 'rgba(255, 255, 255, 0.5)'}}> 
           <div className="row g-0">
-            {/* <div className="col-md-4  col-lg- d-flex align-items-center"> */}
               <div className="card-body p-4 p-lg-5 text-black">
-
                 <form onSubmit={Submit} style={{fontFamily:'Raleway'}}>
-
-                {/* <h5 className="mb-3 pb-1 fw-bold" style={{"letterSpacing": "1px"}}><u>Apply Here</u></h5> */}
-
                   <div>
-
                       <h5 className="mb-3 pb-1 fw-bold" style={{"letterSpacing": "1px"}}><u>Basic Details</u></h5>
 
                       <div className="row g-2">
@@ -64,7 +58,7 @@ const Apply = () => {
                           </div>
                         </div>
                       </div>
-                      
+
                       <div className="row g-3">
                         <div className='col'>
                           <div className="form-outline mb-4">
@@ -96,7 +90,7 @@ const Apply = () => {
                           </div>
                         </div>
                       </div>
-                      
+
                     </div>
 
                   <div>
@@ -151,8 +145,7 @@ const Apply = () => {
                   <Link className="text-danger fw-bold" to="/">Return to Home</Link>
                 </form>
               </div>
-            </div>
-          {/* </div> */}
+            </div>      
         </div>
       </div>
     </div>

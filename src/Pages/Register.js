@@ -20,7 +20,6 @@ const Register = () => {
 
   const Submit = (e)=> {
     e.preventDefault();
-    // console.log();
     navigate("/modal");
   }
 

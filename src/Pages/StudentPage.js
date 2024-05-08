@@ -1,5 +1,4 @@
 import React from 'react';
-// import Navbar from '../Components/Navbar';
 import { Link } from 'react-router-dom';
 import Logo from '../Components/Logo';
 import c1 from "../Assets/c4.jpg";
@@ -10,9 +9,6 @@ import SchemeProvided from '../Components/SchemeProvided';
 import SchemeDesc from '../Components/SchemeDesc';
 
 const StudentPage = () => {
-
-//   const navigate = useNavigate();
-
   
   return (
     <div className="container-fluid pt-3" style={{ backgroundImage: `url(${c1})` , backgroundSize: 'cover', backgroundPosition: 'center', filter:'brightness(80%)', fontFamily:'Raleway'}}>
